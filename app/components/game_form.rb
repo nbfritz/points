@@ -1,15 +1,12 @@
 # frozen_string_literal: true
 
 class Components::GameForm < Components::Base
+  prop :method, String
+
   def view_template
-    Form(action: games_path, method: "POST") do
-      FormField do
-        FormFieldLabel { "Name" }
-        Input(name: "game[name]", required: true, minlength: "3")
-        FormFieldHint
-        FormFieldError
-      end
-      Button(type: "submit") { "Save" }
+    form(action: games_path, method: @method, class: "flex flex-col gap-y-2") do
+      render TextInput.new(name: "game[name]", label: "Game Name")
+      render SubmitButton.new { "Save" }
     end
   end
 end

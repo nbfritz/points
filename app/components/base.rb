@@ -2,10 +2,10 @@
 
 class Components::Base < Phlex::HTML
   include Components
-  include RubyUI
 
   # Include any helpers you want to be available across all components
   include Phlex::Rails::Helpers::Routes
+  extend Literal::Properties
 
   if Rails.env.development?
     def before_template

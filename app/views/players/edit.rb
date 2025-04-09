@@ -2,7 +2,9 @@
 
 class Views::Players::Edit < Views::Base
   def view_template
-    h1 { "New Player" }
-    render Components::PlayerForm.new
+    render PageBody.new do
+      render HeaderText.new { "New Player" }
+      render Components::PlayerForm.new(method: "PUT")
+    end
   end
 end

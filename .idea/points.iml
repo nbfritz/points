@@ -25,6 +25,8 @@
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/.github" />
+      <excludeFolder url="file://$MODULE_DIR$/.kamal" />
     </content>
     <orderEntry type="jdk" jdkName="asdf: 3.4.2" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -72,6 +74,7 @@
     <orderEntry type="library" scope="PROVIDED" name="json (v2.10.2, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.4, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="lint_roller (v1.1.0, asdf: 3.4.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="literal (v1.6.0, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="logger (v1.7.0, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.24.0, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, asdf: 3.4.2) [gem]" level="application" />
@@ -121,7 +124,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.31.0, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails-omakase (v1.1.0, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, asdf: 3.4.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ruby_ui (v1.0.0, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sin_lru_redux (v2.5.2, asdf: 3.4.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="solid_cable (v3.0.7, asdf: 3.4.2) [gem]" level="application" />
@@ -180,8 +182,6 @@
         <option value="phlex:install" />
         <option value="phlex:view" />
         <option value="resource" />
-        <option value="ruby_ui:component" />
-        <option value="ruby_ui:install" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="script" />
@@ -230,8 +230,6 @@
         <option value="phlex:install" />
         <option value="phlex:view" />
         <option value="resource" />
-        <option value="ruby_ui:component" />
-        <option value="ruby_ui:install" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="script" />

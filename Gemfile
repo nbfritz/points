@@ -40,6 +40,9 @@ gem "foreman", "~> 0.88.1"
 # Ruby-based view file definitions and shared components
 gem "phlex-rails", "~> 2.2"
 
+# Ruby properties and typechecking
+gem "literal", "~> 1.6"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -60,9 +63,6 @@ group :development do
 
   # Annotate files with model information
   gem "annotate", "~> 2.6"
-
-  # Phlex components for Rails
-  gem "ruby_ui", "~> 1.0", require: false
 end
 
 group :test do

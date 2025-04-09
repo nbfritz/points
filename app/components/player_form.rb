@@ -1,17 +1,12 @@
 # frozen_string_literal: true
 
 class Components::PlayerForm < Components::Base
+  prop :method, String
+
   def view_template
-    h1 { 'TEST'}
-    Form do
-      FormField do
-        FormFieldLabel { "Name" }
-        Input(required: true, minlength: "3")
-        FormFieldHint
-        FormFieldError
-      end
-      Button(type: "submit") { "Save" }
+    form(action: players_path, method: @method, class: "flex flex-col gap-2") do
+      input(name: "game[name]", required: true, minlength: "3")
+      button(type: "submit") { "Save" }
     end
-    h1 { 'TEST'}
   end
 end

@@ -136,6 +136,7 @@ GEM
     json (2.10.2)
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
+    literal (1.6.0)
     logger (1.7.0)
     loofah (2.24.0)
       crass (~> 1.0.2)
@@ -278,7 +279,6 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
-    ruby_ui (1.0.0)
     securerandom (0.4.1)
     sin_lru_redux (2.5.2)
     solid_cable (3.0.7)
@@ -364,12 +364,12 @@ DEPENDENCIES
   factory_bot_rails (~> 6.4)
   foreman (~> 0.88.1)
   importmap-rails
+  literal (~> 1.6)
   phlex-rails (~> 2.2)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)
   rubocop-rails-omakase
-  ruby_ui (~> 1.0)
   solid_cable
   solid_cache
   solid_queue

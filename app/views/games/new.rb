@@ -2,6 +2,9 @@
 
 class Views::Games::New < Views::Base
   def view_template
-    render Components::GameForm
+    render PageBody.new do
+      render HeaderText.new { "New Game" }
+      render Components::GameForm.new(method: "POST")
+    end
   end
 end

@@ -2,7 +2,8 @@ class GamesController < ApplicationController
   before_action :set_game, only: %i[show edit update destroy]
 
   def index
-    render Views::Games::Index.new
+    games = Game.all
+    render Views::Games::Index.new(games:)
   end
 
   def show
@@ -15,7 +16,7 @@ class GamesController < ApplicationController
 
   def create
     Game.create(params.require(:game).permit(:name))
-    redirect_to :index
+    redirect_to games_path
   end
 
   def edit
