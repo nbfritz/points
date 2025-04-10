@@ -28,4 +28,14 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      player:
+        name: "Player Name"
+        create: "Create Player"
+        update: "Save Player"
+      game:
+        name: "Game Name"
+        create: "Create Game"
+        update: "Save Game"
+

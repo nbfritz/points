@@ -20,7 +20,7 @@ class GamesController < ApplicationController
   end
 
   def edit
-    render Views::Games::Edit.new
+    render Views::Games::Edit.new(game: @game)
   end
 
   def update
