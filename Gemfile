@@ -54,6 +54,9 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  # Support for Procfile.dev for coordinating multiple services
+  gem "foreman", "~> 0.88.1"
 end
 
 group :test do
