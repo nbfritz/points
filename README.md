@@ -1,24 +1,8 @@
-# README
+# Points
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my toy project for testing new technologies and features. It is a scorekeeping app for various boardgames. It allows each player to pull up the game on a separate form and update their score (and other game stats) with the changes immediately being visible to the other players.
 
-Things you may want to cover:
+It's a simple problem, with some interesting nuances that lets me dig into various aspects of a web framework.
 
-* Ruby version
+This is the vanilla Rails version, initialized with plain old `rails new` with no other options than what is default as of the date I ran the command in April 2025. I may add additional libraries, but the goal is to keep this version as close to Rails-only best practices as possible.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
