@@ -1,0 +1,18 @@
+<%# locals: (submit_text:, player:) -%>
+
+<%= form_with model: player, class: "card column" do |form| %>
+  <div class="field">
+    <%= form.label :name, "Player Name" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email, "Player Email" %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= link_to "Cancel", players_path, class: "button-link" %>
+    <%= form.submit submit_text %>
+  </div>
+<% end %>

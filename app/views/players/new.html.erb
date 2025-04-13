@@ -1,17 +1,5 @@
-<%= form_for @player do |form| %>
+<div class="card">
   <h1>Create New Player</h1>
+</div>
 
-  <div>
-    <%= form.label :name, "Player Name" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :email, "Player Email" %>
-    <%= form.email_field :email %>
-  </div>
-
-  <div>
-    <%= form.submit "Create Player" %>
-  </div>
-<% end %>
+<%= render partial: "form", locals: {player: @player, submit_text: "Create Player"} %>

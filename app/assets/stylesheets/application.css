@@ -8,3 +8,41 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+body {
+    background-color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+main.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: #fff 0 0 10px;
+    margin: 20px auto;
+    width: 720px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-grow: 1;
+}
