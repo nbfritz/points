@@ -1,0 +1,17 @@
+<%= form_for @player do |form| %>
+  <h1>Edit Player</h1>
+
+  <div>
+    <%= form.label :name, "Player Name" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :email, "Player Email" %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit "Update Player" %>
+  </div>
+<% end %>
