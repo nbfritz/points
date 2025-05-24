@@ -1,0 +1,13 @@
+# Refer for explanation to following link:
+# https://lefthook.dev/configuration/
+#
+pre-commit:
+  parallel: true
+  commands:
+    rubocop:
+      glob: "*.rb"
+      run: bundle exec rubocop --config .rubocop.yml --force-exclusion --parallel --autocorrect {staged_files}
+      stage_fixed: true
+    brakeman:
+      glob: "*.rb"
+      run: bundle exec brakeman --quiet --no-pager --no-summary --force --only-files {staged_files}
