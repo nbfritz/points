@@ -8,3 +8,71 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+body {
+  --primary-fg-color: black;
+  --alert-bg-color: darkred;
+  --alert-fg-color: white;
+  --notice-bg-color: darkgreen;
+  --notice-fg-color: white;
+  --footer-bg-color: darkblue;
+  --footer-fg-color: white;
+  --content-width: 800px;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+#content {
+  color: var(--primary-fg-color);
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1em;
+}
+
+#content a { color: var(--primary-fg-color) }
+#content a:hover { color: var(--primary-fg-color) }
+
+footer {
+  background-color: var(--footer-bg-color);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+footer > nav {
+  color: var(--footer-fg-color);
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  margin: 0 auto;
+  max-width: var(--content-width);
+  padding: 1em;
+}
+
+footer a { color: var(--footer-fg-color); }
+footer a:hover { color: var(--footer-fg-color); }
+
+footer > nav > div {
+  flex: 1;
+}
+
+#identity-nav {
+  text-align: right;
+}
+
+header > div.alert > p,
+header > div.notice > p {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header > div.alert {
+  background-color: var(--alert-bg-color);
+  color: var(--alert-fg-color);
+}
+
+header > div.notice {
+  background-color: var(--notice-bg-color);
+  color: var(--notice-fg-color);
+}
