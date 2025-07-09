@@ -65,4 +65,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "lefthook", "~> 1.11"
+gem "lefthook", "~> 1.12"
